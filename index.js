@@ -65,3 +65,35 @@ function createEmployee() {
          }
         });
 } 
+function internQuestions() {
+    const questions = [
+        {
+            type: "input",
+            name: "name",
+            message: "Enter the interns' name.",
+        },
+        {   type: "input", 
+            name: "id",
+            message: "Enter the intern's ID.",
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "Enter the intern's email.",
+        },
+        {   type: "input", 
+            name: "school", 
+            message: "Enter the intern's school.",
+        },
+    ];
+    inquirer.prompt(questions).then((answers) => {
+        const intern = new Intern(
+            answers.name,
+            answers.id,
+            answers.email,
+            answers.school, 
+        );
+        emptyArr.push(intern);
+        createEmployee();
+        });
+}
