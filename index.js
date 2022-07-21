@@ -97,3 +97,36 @@ function internQuestions() {
         createEmployee();
         });
 }
+function engineerQuestions(){
+    const questions = [
+        {
+            type: "input",
+            name: "name",
+            message: "Enter the engineer's name.",
+        },
+        {   type: "input", 
+            name: "id",
+            message: "Enter the engineer's ID.",
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "Enter the engineer's email.",
+        },
+        {   type: "input", 
+            name: "github", 
+            message: "Enter the engineer's GitHub username.",
+        },
+    ];
+    inquirer.prompt(questions).then((answers) =>{
+        const engineer = new Engineer(
+            answers.name,
+            answers.id,
+            answers.email,
+            answers.github,
+        );
+        emptyArr.push(engineer);
+        createEmployee();
+    }); 
+}     
+initiate ();
