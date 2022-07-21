@@ -44,3 +44,24 @@ function managerQuestions (){
            createEmployee();
         });     
 }
+function createEmployee() {
+    const newEmployeeQuest = [
+        {
+           type: "list",
+            name: "type",
+            message: "Would you like to add an intern or an engineer to this team?",
+            choices: ["Engineer", "Intern", "I do not want to add a team member",],
+
+        }
+    ];
+    inquirer.prompt(newEmployeeQuest).then ((answers) => {
+        if (answers.type === "Engineer") {
+            engineerQuestions();
+         } 
+         else if (answers.type === "Intern") {
+            internQuestions();
+         }else {
+            // something has to happen here but not sure what 
+         }
+        });
+} 
