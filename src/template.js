@@ -29,7 +29,7 @@ const genTeam = (template) => {
                 <ul class="list-group">
                     <li class="list-group-item">ID: ${engineer.getId()}</li>
                     <li class="list-group-item">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></li>
-                    <li class="list-group-item">Office number: ${engineer.getGitHub()}</li>
+                    <li class="list-group-item">GitHub: ${engineer.getGitHub()}</li>
                 </ul>
             </div>
         </div>
@@ -46,7 +46,7 @@ const genTeam = (template) => {
                 <ul class="list-group">
                     <li class="list-group-item">ID: ${intern.getId()}</li>
                     <li class="list-group-item">Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></li>
-                    <li class="list-group-item">Office number: ${intern.getSchool()}</li>
+                    <li class="list-group-item">School: ${intern.getSchool()}</li>
                 </ul>
             </div>
         </div>
