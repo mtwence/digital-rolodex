@@ -1,27 +1,27 @@
 const Employee = require("../lib/Employee");
+const Engineer = require("../lib/Engineer");
 
-describe("Employee", () => {
-  const employee = new Employee("Jeffrey", "007", "Jeff007@gmail.com");
-  console.log(employee);
+describe("Engineer", () => {
+  const engineer = new Engineer(
+    "Karl Marx",
+    "0011",
+    "Kmarxie@gmail.com",
+    "Kmarx",
+  );
   describe("constructor", () => {
-    it("should create name, id, and email", () => {
-      expect(employee.empName).toEqual("Jeffrey");
-      expect(employee.empId).toEqual("007");
-      expect(employee.empEmail).toEqual("Jeff007@gmail.com");
+    it("should create name, id, email, and github username", () => {
+      expect(engineer.name).toEqual("Karl Marx");
+      expect(engineer.id).toEqual("0011");
+      expect(engineer.email).toEqual("Kmarxie@gmail.com");
+      expect(engineer.engGitHub).toEqual("Kmarx");
+      })
     });
-  });
   describe("class methods", () => {
-    it("should return employee name", () => {
-      expect(employee.getName()).toEqual("Jeffrey");
+    it("should return engineer github username", () => {
+      expect(engineer.getGitHub()).toEqual("Kmarx");
     });
-    it("should return employee id", () => {
-      expect(employee.getId()).toEqual("007");
-    });
-    it("should return employee email", () => {
-      expect(employee.getEmail()).toEqual("Jeff007@gmail.com");
-    });
-    it("should return employee role", () => {
-      expect(employee.getRole()).toEqual("Employee");
+    it("should return engineer role", () => {
+      expect(engineer.getRole()).toEqual("Engineer");
     });
   });
 });

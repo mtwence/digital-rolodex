@@ -68,8 +68,7 @@ function createEmployee() {
     inquirer.prompt(newEmployeeQuest).then ((answers) => {
         if (answers.type === "Engineer") {
             engineerQuestions();
-         } 
-         else if (answers.type === "Intern") {
+         } else if (answers.type === "Intern") {
             internQuestions();
          }else {
             writeToFile()
