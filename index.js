@@ -1,10 +1,21 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const createHTML = require("./src/createHTML");
+const path = require("path");
+// const createHTML = require("./src/createHTML");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
+const DIST_DIR = path.resolve(__dirname, 'dist');
+const distPath = path.join(DIST_DIR, 'index.html');
+const template = require("./src/template.js");
 const emptyArr = [];
+
+function writeToFile() {
+    fs.writeFile(distPath,template(emptyArr),
+    (err) => {
+        err ? console.error(err) : console.log("Hooray!")
+    })
+}
 
 function initiate (){
     managerQuestions();
@@ -61,7 +72,7 @@ function createEmployee() {
          else if (answers.type === "Intern") {
             internQuestions();
          }else {
-            // something has to happen here but not sure what 
+            writeToFile()
          }
         });
 } 
