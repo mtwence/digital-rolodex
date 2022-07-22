@@ -45,8 +45,26 @@ All functions, constructors, and custom methods pass. The failures are from line
 
 ### Code Snippets
 
-```ruby
+This is my class for my Manager employee(s).
 
+```ruby
+const Employee = require('./Employee');
+
+class Manager extends Employee {
+    constructor (name, id, email, officeNum) {
+        super (name, id, email);
+        this.officeNum = officeNum;
+        const shrug = "¯\_(ツ)_/¯";
+        if (officeNum === "") {
+            this.officeNum = shrug;
+        }
+    }
+
+    getOffNum () { return this.officeNum; }
+
+    getRole () { return "Manager"; }
+}
+module.exports = Manager;
 ```
 
 Here is how the prompts were created for each class essentially. The user receives various prompts, when those prompts send that answer object to an empty array.
