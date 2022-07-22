@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1658462903197" clover="3.2.0">
+  <project timestamp="1658462903197" name="All files">
+    <metrics statements="42" coveredstatements="36" conditionals="12" coveredconditionals="6" methods="14" coveredmethods="14" elements="68" coveredelements="56" complexity="0" loc="42" ncloc="42" packages="1" files="4" classes="4"/>
+    <file name="Employee.js" path="C:\Users\mtwen\Desktop\UCB-Projects\10-digital-rolodex\lib\Employee.js">
+      <metrics statements="15" coveredstatements="12" conditionals="6" coveredconditionals="3" methods="5" coveredmethods="5"/>
+      <line num="3" count="4" type="stmt"/>
+      <line num="4" count="4" type="stmt"/>
+      <line num="5" count="4" type="stmt"/>
+      <line num="6" count="4" type="stmt"/>
+      <line num="7" count="4" type="cond" truecount="1" falsecount="1"/>
+      <line num="8" count="0" type="stmt"/>
+      <line num="10" count="4" type="cond" truecount="1" falsecount="1"/>
+      <line num="11" count="0" type="stmt"/>
+      <line num="13" count="4" type="cond" truecount="1" falsecount="1"/>
+      <line num="14" count="0" type="stmt"/>
+      <line num="18" count="1" type="stmt"/>
+      <line num="20" count="1" type="stmt"/>
+      <line num="22" count="1" type="stmt"/>
+      <line num="24" count="1" type="stmt"/>
+      <line num="26" count="4" type="stmt"/>
+    </file>
+    <file name="Engineer.js" path="C:\Users\mtwen\Desktop\UCB-Projects\10-digital-rolodex\lib\Engineer.js">
+      <metrics statements="9" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="3"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+    </file>
+    <file name="Intern.js" path="C:\Users\mtwen\Desktop\UCB-Projects\10-digital-rolodex\lib\Intern.js">
+      <metrics statements="9" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="3"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+      <line num="14" count="1" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+    </file>
+    <file name="Manager.js" path="C:\Users\mtwen\Desktop\UCB-Projects\10-digital-rolodex\lib\Manager.js">
+      <metrics statements="9" coveredstatements="8" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="3"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="1" type="stmt"/>
+      <line num="8" count="1" type="cond" truecount="1" falsecount="1"/>
+      <line num="9" count="0" type="stmt"/>
+      <line num="13" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="17" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
